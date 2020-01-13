@@ -1,5 +1,7 @@
 import React , { useState, useEffect, Fragment } from 'react';
 
+
+import Fromulario from "./components/Formulario"
 function App(){
 
   /* Utilizar useState con 3 states */
@@ -9,7 +11,7 @@ function App(){
 
   return (
     <Fragment>
-      
+
     </Fragment>
   )
 }
