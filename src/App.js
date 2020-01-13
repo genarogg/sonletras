@@ -9,9 +9,16 @@ function App(){
   const [ letra, agregarLetra ] = useState([]);
   const [ info, agregarInfo ] = useState({});
 
+  /* Metodo para consultar la Api de letras de canciones */
+  const consultarAPILetra = busqueda => {
+        console.log(busqueda)
+  }
+
   return (
     <Fragment>
-      <Fromulario/>
+      <Fromulario
+        consultarAPILetra={consultarAPILetra}
+      />
     </Fragment>
   )
 }
