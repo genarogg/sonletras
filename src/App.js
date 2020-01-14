@@ -25,14 +25,13 @@ function App(){
 
   /* Metodo para consultar el API de informacion */
   const consultarAPIInfo = async () => {
-    const url = `https://theaudiodb.com/api/v1/json/1/search.php?s=${artista}`
-    const resultado = await axios.get(url)
+    if(artista){
+      const url = `https://theaudiodb.com/api/v1/json/1/search.php?s=${artista}`
+      const resultado = await axios.get(url)
 
+      agregarInfo(resultado.data.artists[0])
+    }
     
-    
-
-    agregarInfo(resultado.data.artists[0])
-    /* console.log(info) */
   }
 
   useEffect ( () => {
