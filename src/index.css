@@ -86,3 +86,7 @@ footer{
   text-align: center;
   height: 30px;
 }
+
+.row{
+	width: inherit;
+}
