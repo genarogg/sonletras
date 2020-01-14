@@ -1,7 +1,7 @@
 import React , { useState, useEffect, Fragment } from 'react';
 import axios from "axios"
 import Cancion from "./components/Cancion"
-
+import Informacion from "./components/Informacion"
 import Fromulario from "./components/Formulario"
 function App(){
 
@@ -39,7 +39,7 @@ function App(){
     consultarAPIInfo()
   }, [ artista ])
 
-  return (
+  return ( 
     <Fragment>
       <Fromulario
         consultarAPILetra={consultarAPILetra}
@@ -48,7 +48,9 @@ function App(){
       <div className="container mt-5">
         <div className="row">
           <div className="col-md-6">
-            
+            <Informacion 
+              info={info}
+            />
           </div>
           <div className="col-md-6">
             <Cancion letra={letra} />
