@@ -3,6 +3,8 @@ import axios from "axios"
 import Cancion from "./components/Cancion"
 import Informacion from "./components/Informacion"
 import Fromulario from "./components/Formulario"
+import Footer from "./components/Footer"
+
 function App(){
 
   /* Utilizar useState con 3 states */
@@ -56,6 +58,7 @@ function App(){
           </div>
         </div>
       </div>
+      <Footer />
     </Fragment>
   )
 }
